@@ -1,0 +1,562 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=800">
+    <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+    <style type="text/css">
+          /* Color scheme stolen from Sergey Karayev */
+
+          a {
+              color: #1772d0;
+              text-decoration: none;
+          }
+
+              a:focus,
+              a:hover {
+                  color: #f09228;
+                  text-decoration: none;
+              }
+
+          body,
+          td,
+          th,
+          tr,
+          p,
+          a {
+              font-family: 'Lato', Verdana, Helvetica, sans-serif;
+              font-size: 14px
+          }
+
+          author {
+              font-family: 'Lato', Verdana, Helvetica, sans-serif;
+              font-size: 14px;
+              color ="dimgray";
+          }
+
+          booktitle {
+              font-family: 'Lato', Verdana, Helvetica, sans-serif;
+              font-size: 14px;
+              color ="dimgray";
+          }
+
+          red {
+              color: #FF0000;
+          }
+
+          heading {
+              font-family: 'Lato', Verdana, Helvetica, sans-serif;
+              font-size: 22px;
+          }
+
+          papertitle {
+              font-family: 'Lato', Verdana, Helvetica, sans-serif;
+              font-size: 16px;
+              font-weight: 600
+          }
+
+          name {
+              font-family: 'Lato', Verdana, Helvetica, sans-serif;
+              font-size: 28px;
+          }
+
+          .one {
+              width: 180px;
+              height: 180px;
+              position: relative;
+          }
+
+          .two {
+              width: 180px;
+              height: 180px;
+              position: absolute;
+              /*
+        top: 50%;
+        left: 50%;
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        */
+              transition: opacity .2s ease-in-out;
+              -moz-transition: opacity .2s ease-in-out;
+              -webkit-transition: opacity .2s ease-in-out;
+          }
+
+          .fade {
+              transition: opacity .2s ease-in-out;
+              -moz-transition: opacity .2s ease-in-out;
+              -webkit-transition: opacity .2s ease-in-out;
+          }
+
+          span.highlight {
+              background-color: #ffffd0;
+          }
+    </style>
+    <!-- <link rel="icon" type="image/png" href="images/seal_icon.png"> -->
+    <title>Longguang Wang</title>
+
+
+    <body>
+        <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+                <tr style="padding:0px">
+                    <td style="padding:0px">
+                        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                            <tbody>
+                                <tr style="padding:0px">
+                                    <td style="padding:6.5%;width:75%;vertical-align:left">
+                                        <p style="text-align:center">
+                                            <name>   ABC Li 李 </name>
+                                        </p>
+                                        <p>
+                                            I am a Ph.D. student in National University of Defense Technology. Previously, I received my M.Eng degree from National University of Defense Technology in 2017 and B.Eng degree from Shandong University in 2015.
+                                        </p>
+                                        <p style="text-align:center">
+                                            <a href="mailto:wanglongguang15@nudt.edu.cn">Email</a> &nbsp;/&nbsp;
+                                            <a href="https://scholar.google.com/citations?user=gbBAujsAAAAJ&hl=en">Google Scholar</a>
+                                            &nbsp;/&nbsp;
+                                            <a href="https://github.com/LongguangWang/"> GitHub </a>
+                                        </p>
+                                    </td>
+                                    <td width="23%">
+                                        <img src="./imgs/longguang.jpg" width="120">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+                            <tbody>
+                                <tr>
+                                    <td width="100%" valign="middle">
+                                        <heading>News</heading>
+                                        <hr>
+                                        <p>
+                                            <li style="line-height: 22px">[02/2022] Our paper ''Disentangling Light Fields for Super-Resolution and Disparity Estimation'' was accepted by IEEE TPAMI.</li>
+                                            <li style="line-height: 22px">[01/2022] We are organizing <a href="https://github.com/The-Learning-And-Vision-Atelier-LAVA/Stereo-Image-SR/tree/NTIRE2022">NTIRE Stereo Image Super-Resolution Challenge</a> @ CVPR 2022.</li>
+                                            <li style="line-height: 22px">[07/2021] One paper (<a href="https://github.com/LongguangWang/ArbSR">ArbSR</a>) was accepted by ICCV 2021.</li>
+                                            <li style="line-height: 22px">
+                                                [03/2021] Two papers (<a href="https://github.com/LongguangWang/DASR">DASR</a>,
+                                                <a href="https://github.com/LongguangWang/SMSR">SMSR</a>) were accepted by CVPR 2021.
+                                            </li>
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+                            <tbody>
+                                <tr>
+                                    <td width="100%" valign="middle">
+                                        <heading>Publications & Preprints</heading>
+                                        <hr>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+                        <!-- ArbSR 2020 -->
+                        <table style="width:100%;border:0px;border-spacing:20px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-bottom:-65px;">
+                            <tbody>
+                                <tr>
+                                    <td width="30%">
+                                        <div class="one" align="center">
+                                            <img src="./imgs/DistgLF.gif" width="220" height="130">
+                                        </div>
+                                    </td>
+                                    <td valign="top" width="75%">
+                                        <papertitle>
+                                            Disentangling Light Fields for Super-Resolution and Disparity Estimation
+                                        </papertitle>
+                                        <p style="font-size:3px">
+                                            <author>
+                                                Yingqian Wang,
+                                                <strong>Longguang Wang</strong>,
+                                                Gaochang Wu,
+                                                Jungang Yang,
+                                                Wei An,
+                                                Jingyi Yu,
+                                                Yulan Guo
+                                            </author>
+                                        <p style="font-size:3px">
+                                            <em><booktitle> IEEE TPAMI, 2022 </booktitle></em>
+                                        <p style="font-size:3px">
+                                            <a href="https://yingqianwang.github.io/DistgLF/">[Project]</a>,
+                                            <a href="https://ieeexplore-ieee-org-s.nudtproxy.yitlink.com/document/9716806">[Paper]</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table><br>
+
+
+                        <!-- ArbSR 2020 -->
+                        <table style="width:100%;border:0px;border-spacing:20px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-bottom:-65px;">
+                            <tbody>
+                                <tr>
+                                    <td width="30%">
+                                        <div class="one" align="center">
+                                            <img src="./imgs/ArbSR.gif" width="220" height="130">
+                                        </div>
+                                    </td>
+                                    <td valign="top" width="75%">
+                                        <papertitle>
+                                            Learning A Single Network for Scale-Arbitrary Super-Resolution
+                                        </papertitle>
+                                        <p style="font-size:3px">
+                                            <author>
+                                                <strong>Longguang Wang</strong>,
+                                                Yingqian Wang,
+                                                Zaiping Lin,
+                                                Jungang Yang,
+                                                Wei An,
+                                                Yulan Guo
+                                            </author>
+                                        <p style="font-size:3px">
+                                            <em><booktitle> ICCV, 2021 </booktitle></em>
+                                        <p style="font-size:3px">
+                                            <a href="https://longguangwang.github.io/Project/ArbSR/">[Project]</a>,
+                                            <a href="https://replicate.ai/longguangwang/arbsr">[Demo]</a>,
+                                            <a href="https://arxiv.org/pdf/2004.03791.pdf">[Paper]</a>,
+                                            <a href="https://github.com/LongguangWang/ArbSR">[Code]</a>, <a href="https://mp.weixin.qq.com/s/rDtxbt3OPN1wrSe406mVRg">[News]</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table><br>
+
+
+                        <!-- DASR 2021 CVPR -->
+                        <table style="width:100%;border:0px;border-spacing:20px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-bottom:-65px;">
+                            <tbody>
+                                <tr>
+                                    <td width="30%">
+                                        <div class="one" align="center">
+                                            <img src="./imgs/DASR.png" width="220" height="100">
+                                        </div>
+                                    </td>
+                                    <td valign="top" width="75%">
+                                        <papertitle>Unsupervised Degradation Representation Learning for Blind Super-Resolution</papertitle>
+                                        <p style="font-size:3px">
+                                            <author>
+                                                <strong>Longguang Wang</strong>,
+                                                Yingqian Wang,
+                                                Xiaoyu Dong,
+                                                Qingyu Xu,
+                                                Jungang Yang,
+                                                Wei An,
+                                                Yulan Guo
+                                            </author>
+                                        <p style="font-size:3px">
+                                            <em><booktitle> CVPR, 2021 </booktitle></em>
+                                        <p style="font-size:3px">
+                                            <a href="https://openaccess.thecvf.com/content/CVPR2021/html/Wang_Unsupervised_Degradation_Representation_Learning_for_Blind_Super-Resolution_CVPR_2021_paper.html">[Paper]</a>,
+                                            <a href="https://github.com/LongguangWang/DASR">[Code]</a>, <a href="https://mp.weixin.qq.com/s/jmaMObrWwyg6j659tGe-Kw">[News]</a>,
+                                            <a href="https://www.techbeat.net/talk-info?id=537">[Video]</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+
+                        <!-- SMSR 2021 CVPR -->
+                        <table style="width:100%;border:0px;border-spacing:20px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-bottom:-65px;">
+                            <tbody>
+                                <tr>
+                                    <td width="30%">
+                                        <div class="one" align="center">
+                                            <img src="./imgs/SMSR.png" width="220" height="120">
+                                        </div>
+                                    </td>
+                                    <td valign="top" width="75%">
+                                        <papertitle>
+                                            Exploring Sparsity in Image Super-Resolution for Efficient Inference
+                                        </papertitle>
+                                        <p style="font-size:3px">
+                                            <author>
+                                                <strong>Longguang Wang</strong>,
+                                                Xiaoyu Dong,
+                                                Yingqian Wang,
+                                                Xinyi Ying,
+                                                Zaiping Lin,
+                                                Wei An,
+                                                Yulan Guo
+                                            </author>
+                                        <p style="font-size:3px">
+                                            <em><booktitle> CVPR, 2021 </booktitle></em>
+                                        <p style="font-size:3px">
+                                            <a href="https://openaccess.thecvf.com/content/CVPR2021/html/Wang_Exploring_Sparsity_in_Image_Super-Resolution_for_Efficient_Inference_CVPR_2021_paper.html">[Paper]</a>,
+                                            <a href="https://github.com/LongguangWang/SMSR">[Code]</a>, <a href="https://mp.weixin.qq.com/s/vIacjZk6UvNCxJIdBWY0og">[News]</a>,
+                                            <a href="https://www.bilibili.com/video/BV1eL411x7sy?spm_id_from=333.999.0.0">[Video]</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table><br>
+
+                        <!-- DFnet TIP 2021 -->
+                        <table style="width:100%;border:0px;border-spacing:20px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-bottom:-65px;">
+                            <tbody>
+                                <tr>
+                                    <td width="30%">
+                                        <div class="one" align="center">
+                                            <img src="./imgs/LFDFnet.png" width="220" height="120">
+                                        </div>
+                                    </td>
+                                    <td valign="top" width="75%">
+                                        <papertitle>
+                                            Light field image super-resolution using deformable convolution
+                                        </papertitle>
+                                        <p style="font-size:3px">
+                                            <author>
+                                                Yingqian Wang,
+                                                Jungang Yang,
+                                                <strong>Longguang Wang</strong>,
+                                                Xinyi Ying,
+                                                Tianhao Wu,
+                                                Wei An,
+                                                Yulan Guo
+                                            </author>
+                                        <p style="font-size:3px">
+                                            <em><booktitle> IEEE TIP, 2021 </booktitle></em>
+                                        <p style="font-size:3px">
+                                            <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9286855">[Paper]</a>, <a href="https://github.com/YingqianWang/LF-DFnet">[Code]</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table><br>
+
+                        <!-- InterNet 2020 ECCV -->
+                        <table style="width:100%;border:0px;border-spacing:20px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-bottom:-65px;">
+                            <tbody>
+                                <tr>
+                                    <td width="30%">
+                                        <div class="one" align="center">
+                                            <img src="./imgs/InterNet.jpg" width="220" height="120">
+                                        </div>
+                                    </td>
+                                    <td valign="top" width="75%">
+                                        <papertitle>
+                                            Spatial-Angular Interaction for Light Field Image Super-Resolution
+                                        </papertitle>
+                                        <p style="font-size:3px">
+                                            <author>
+                                                Yingqian Wang,
+                                                <strong>Longguang Wang</strong>,
+                                                Jungang Yang,
+                                                Wei An,
+                                                Jingyi Yu,
+                                                Yulan Guo
+                                            </author>
+                                        <p style="font-size:3px">
+                                            <em><booktitle> ECCV, 2020 </booktitle></em>
+                                        <p style="font-size:3px">
+                                            <a href="https://arxiv.org/pdf/1912.07849.pdf">[Paper]</a>, <a href="https://github.com/YingqianWang/LF-InterNet">[Code]</a>, <a href="https://zhuanlan.zhihu.com/p/157115310">[News]</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table><br>
+
+
+                        <!-- PAM TPAMI 2020 -->
+                        <table style="width:100%;border:0px;border-spacing:20px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-bottom:-65px;">
+                            <tbody>
+                                <tr>
+                                    <td width="30%">
+                                        <div class="one" align="center">
+                                            <img src="./imgs/PAM.png" width="220" height="120">
+                                        </div>
+                                    </td>
+                                    <td valign="top" width="75%">
+                                        <papertitle>Parallax Attention for Unsupervised Stereo Correspondence Learning</papertitle>
+                                        <p style="font-size:3px">
+                                            <author>
+                                                <strong>Longguang Wang</strong>,
+                                                Yulan Guo,
+                                                Yingqian Wang,
+                                                Zhengfa Liang,
+                                                Zaiping Lin,
+                                                Jungang Yang,
+                                                Wei An
+                                            </author>
+                                        <p style="font-size:3px">
+                                            <em><booktitle> IEEE TPAMI, 2020 </booktitle></em>
+                                        <p style="font-size:3px">
+                                            <a href="https://arxiv.org/pdf/2009.08250">[Paper]</a>, <a href="https://github.com/LongguangWang/PAM">[Code]</a>,
+                                            <a href="">[News</a><a href="https://mp.weixin.qq.com/s/EdEwOEm5ttj3IM-6jI_s4A">(三维视觉)</a>,
+                                            <a href="https://mp.weixin.qq.com/s/3fSHzfMpv4YkK8YmpjU_YQ">(深蓝)</a><a href="">]</a>,
+                                            <a href="https://www.techbeat.net/talk-info?id=537">[Video]</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table><br>
+
+                        <!-- SOF-VSR TIP 2020 -->
+                        <table style="width:100%;border:0px;border-spacing:20px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-bottom:-65px;">
+                            <tbody>
+                                <tr>
+                                    <td width="30%">
+                                        <div class="one" align="center">
+                                            <img src="./imgs/SOF-VSR-TIP.png" width="220" height="120">
+                                        </div>
+                                    </td>
+                                    <td valign="top" width="75%">
+                                        <papertitle>
+                                            Deep Video Super-Resolution Using HR Optical Flow Estimation
+                                        </papertitle>
+                                        <p style="font-size:3px">
+                                            <author>
+                                                <strong>Longguang Wang</strong>,
+                                                Yulan Guo,
+                                                Li Liu,
+                                                Zaiping Lin,
+                                                Xinpu Deng,
+                                                Wei An
+                                            </author>
+                                        <p style="font-size:3px">
+                                            <em><booktitle> IEEE TIP, 2020 </booktitle></em>
+                                        <p style="font-size:3px">
+                                            <a href="https://arxiv.org/pdf/2001.02129">[Paper]</a>, <a href="https://github.com/LongguangWang/SOF-VSR">[Code]</a>, <a href="https://mp.weixin.qq.com/s?__biz=MzIyMjIxNDk3OA==&mid=2651681778&idx=1&sn=d03f55ed3ed055e094574c7df8261fbc">[News]</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table><br>
+
+                        <!-- DeOccNet WACV 2020 -->
+                        <table style="width:100%;border:0px;border-spacing:20px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-bottom:-65px;">
+                            <tbody>
+                                <tr>
+                                    <td width="30%">
+                                        <div class="one" align="center">
+                                            <img src="./imgs/DeOccnet.png" width="220" height="120">
+                                        </div>
+                                    </td>
+                                    <td valign="top" width="75%">
+                                        <papertitle>
+                                            DeOccNet: Learning to See Through Foreground Occlusions in Light Fields
+                                        </papertitle>
+                                        <p style="font-size:3px">
+                                            <author>
+                                                Yingqian Wang,
+                                                Tianhao Wu,
+                                                Jungang Yang,
+                                                <strong>Longguang Wang</strong>,
+                                                Wei An,
+                                                Yulan Guo
+                                            </author>
+                                        <p style="font-size:3px">
+                                            <em><booktitle> WACV, 2020 </booktitle></em>
+                                        <p style="font-size:3px">
+                                            <a href="http://openaccess.thecvf.com/content_WACV_2020/papers/Wang_DeOccNet_Learning_to_See_Through_Foreground_Occlusions_in_Light_Fields_WACV_2020_paper.pdf">[Paper]</a>, <a href="https://github.com/YingqianWang/DeOccNet">[Code]</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table><br>
+
+                        <!-- PASSRnet 2019 CVPR -->
+                        <table style="width:100%;border:0px;border-spacing:20px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-bottom:-65px;">
+                            <tbody>
+                                <tr>
+                                    <td width="30%">
+                                        <div class="one" align="center">
+                                            <img src="./imgs/PASSRnet.png" width="220" height="130">
+                                        </div>
+                                    </td>
+                                    <td valign="top" width="75%">
+                                        <papertitle>
+                                            Learning Parallax Attention for Stereo Image Super-Resolution
+                                        </papertitle>
+                                        <p style="font-size:3px">
+                                            <author>
+                                                <strong>Longguang Wang</strong>,
+                                                Yingqian Wang,
+                                                Zhengfa Liang,
+                                                Zaiping Lin,
+                                                Jungang Yang,
+                                                Wei An,
+                                                Yulan Guo
+                                            </author>
+                                        <p style="font-size:3px">
+                                            <em><booktitle> CVPR, 2019 </booktitle></em>
+                                        <p style="font-size:3px">
+                                            <a href="https://openaccess.thecvf.com/content_CVPR_2019/papers/Wang_Learning_Parallax_Attention_for_Stereo_Image_Super-Resolution_CVPR_2019_paper.pdf">[Paper]</a>,
+                                            <a href="https://github.com/LongguangWang/PASSRnet">[Code]</a>, <a href="zN11cI3dOOp1PDXaCPcRng">[News]</a>,
+                                            <a href="https://www.techbeat.net/talk-info?id=537">[Video]</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table><br>
+
+                        <!-- Flickr1024 2019 CVPRW -->
+                        <table style="width:100%;border:0px;border-spacing:20px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-bottom:-65px;">
+                            <tbody>
+                                <tr>
+                                    <td width="30%">
+                                        <div class="one" align="center">
+                                            <img src="./imgs/Flickr1024.png" width="220" height="130">
+                                        </div>
+                                    </td>
+                                    <td valign="top" width="75%">
+                                        <papertitle>
+                                            Flickr1024: A Large-Scale Dataset for Stereo Image Super-Resolution
+                                        </papertitle>
+                                        <p style="font-size:3px">
+                                            <author>
+                                                Yingqian Wang,
+                                                <strong>Longguang Wang</strong>,
+                                                Jungang Yang,
+                                                Wei An,
+                                                Yulan Guo
+                                            </author>
+                                        <p style="font-size:3px">
+                                            <em><booktitle> ICCVW, 2019 </booktitle></em>
+                                        <p style="font-size:3px">
+                                            <a href="http://openaccess.thecvf.com/content_ICCVW_2019/papers/LCI/Wang_Flickr1024_A_Large-Scale_Dataset_for_Stereo_Image_Super-Resolution_ICCVW_2019_paper.pdf">[Paper]</a>, <a href="https://yingqianwang.github.io/Flickr1024/">[Project] </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table><br>
+
+                        <!-- SOF-VSR 2018 ACCV -->
+                        <table style="width:100%;border:0px;border-spacing:20px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-bottom:-65px;">
+                            <tbody>
+                                <tr>
+                                    <td width="30%">
+                                        <div class="one" align="center">
+                                            <img src="./imgs/SOF-VSR-ACCV.gif" width="220" height="100">
+                                        </div>
+                                    </td>
+                                    <td valign="top" width="75%">
+                                        <papertitle>
+                                            Learning for video super-resolution through HR optical flow estimation
+                                        </papertitle>
+                                        <p style="font-size:3px">
+                                            <author>
+                                                <strong>Longguang Wang</strong>,
+                                                Yulan Guo,
+                                                Zaiping Lin,
+                                                Xinpu Deng,
+                                                Wei An
+                                            </author>
+                                        <p style="font-size:3px">
+                                            <em><booktitle> ACCV, 2018 </booktitle></em>
+                                        <p style="font-size:3px">
+                                            <a href="https://arxiv.org/pdf/1809.08573">[Paper]</a>, <a href="https://github.com/LongguangWang/SOF-VSR">[Code]</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table><br>
+
+                        <!--SECTION 9 -->
+                        <br>
+                        <br>
+                        <div style="clear:both;">
+                            <p align="right">
+                                <font size="2">
+                                    <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?t=tt&d=mvO0RzXnZn0OApNfE37xUBGWyegQ2Y3xvsmi8FA26Bo&cl=ffffff&w=a"></script>
+                                </font>
+                            </p>
+                            <br />
+                        </div>
+
+
+    </body>
+</html>
